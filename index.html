@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <form novalidate>
-      <!-- 姓名控制項 -->
+      <!-- 姓名控制項 text -->
       <div class="form-group">
         <label for="name">姓名</label>
         <input type="text" class="form-control" name="name" id="name" placeholder="請輸入你的全名 ..." required>
@@ -18,7 +18,7 @@
         <div class="valid-feedback">Good.</div>
       </div>
 
-      <!-- 電子郵件控制項 -->
+      <!-- 電子郵件控制項 email -->
       <div class="form-group">
         <label for="email">電子郵件</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="請輸入你的電子郵件 ..." required>
@@ -27,7 +27,7 @@
       </div>
 
 
-      <!-- 預期薪資控制項 -->
+      <!-- 預期薪資控制項 number -->
       <div class="form-group">
         <label>期望年資(萬元)</label>
         <div class="form-row">
@@ -42,7 +42,19 @@
       </div>
 
 
-      
+      <!-- 目前職稱控制項 datalist -->
+      <div class="form-group">
+        <label for="title">目前職稱</label>
+        <input list="titles" class="form-control" name="current-title" id="title" placeholder="請選擇">
+        <datalist id="titles">
+          <option>前端工程師</option>
+          <option>後端工程師</option>
+          <option>全端工程師</option>
+          <option>資料庫管理師</option>
+          <option>維運技術人員</option>
+          <option>專案經理</option>
+        </datalist>
+      </div>
 
 
 
