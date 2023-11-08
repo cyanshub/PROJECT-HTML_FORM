@@ -27,6 +27,30 @@
       </div>
 
 
+      <!-- 求職狀態: 單選控制項 radio -->
+      <fieldset class="form-group" id="job-hunting-status" name="job-hunting-status">
+        <legend class="col-form-label" for="job-hunting-status">求職狀態</legend>
+        <!-- 選項1 -->
+        <div class="form-check form-check-inline">
+          <input type="radio" name="job-hunting" class="form-check-input" id="active" value="active">
+          <label for="active" class="form-check-label">積極求職</label>
+        </div>
+
+        <!-- 選項2 -->
+        <div class="form-check form-check-inline">
+          <input type="radio" name="job-hunting" class="form-check-input" id="intermediate" value="intermediate">
+          <label for="intermediate" class="form-check-label">瞭解新的機會</label>
+        </div>
+
+        <!-- 選項3 -->
+        <div class="form-check form-check-inline">
+          <input type="radio" name="job-hunting" class="form-check-input" id="inactive" value="inactive">
+          <label for="inactive" class="form-check-label">沒有求職計畫</label>
+        </div>
+      </fieldset>
+
+
+
       <!-- 預期薪資控制項 number -->
       <div class="form-group">
         <label>期望年資(萬元)</label>
