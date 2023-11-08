@@ -27,7 +27,7 @@
       </div>
 
 
-      <!-- 求職狀態: 單選控制項 radio -->
+      <!-- 求職狀態: 單選控制項 input:radio -->
       <fieldset class="form-group" id="job-hunting-status" name="job-hunting-status">
         <legend class="col-form-label" for="job-hunting-status">求職狀態</legend>
         <!-- 選項1 -->
@@ -91,6 +91,37 @@
           <option value="5">5年以上</option>
         </select>
       </div>
+
+
+      <!-- 期望工作型態: 多選控制項 input:checkbox -->
+      <fieldset class="form-group" id="expected-job-type" name="expected-job-type">
+        <legend class="col-form-label" for="expected-job-type">期望工作型態</legend>
+        <!-- 選項 1 -->
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="job-type" id="remote" class="form-check-input" value="remote">
+          <label for="remote" class="form-check-label">遠端工作</label>
+        </div>
+
+        <!-- 選項 2 -->
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="job-type" id="office" class="form-check-input" value="office">
+          <label for="office" class="form-check-lebel">公司上班</label>
+        </div>
+
+        <!-- 選項 3 -->
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="job-type" id="piecework" class="form-check-input" value="piecework">
+          <label for="piecework" class="form-check-lebel">接案工作</label>
+        </div>
+
+        <!-- 選項 4 -->
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="job-type" id="intern" class="form-check-input" value="intern">
+          <label for="intern" class="form-check-lebel">實習工作</label>
+        </div>
+      </fieldset>
+
+
 
       <!-- 多行文字輸入控制項: textarea -->
       <div class="form-group">
