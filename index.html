@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>表單元素實作</title>
+
+
+  <!-- 先引入外部資源在引入本地設計的資源 -->
+  <!-- 引入外部資源: BOOTSTRAP -->
+  <link rel="stylesheet" href="./bootstrap.css">
+
   <!-- 引入樣式 -->
   <link rel="stylesheet" href="./style.css">
+
+
 </head>
 <body>
   <div class="container">
@@ -84,7 +92,7 @@
       <!-- select控制項下拉式選單: 工作年資 -->
       <div class="form-group">
         <label for="experience">工作年資</label>
-        <select name="experience" id="experience">
+        <select name="experience" id="experience" class="form-control">
           <option value="0">新鮮人</option>
           <option value="1">1-3年</option>
           <option value="3">3-5年</option>
@@ -105,19 +113,19 @@
         <!-- 選項 2 -->
         <div class="form-check form-check-inline">
           <input type="checkbox" name="job-type" id="office" class="form-check-input" value="office">
-          <label for="office" class="form-check-lebel">公司上班</label>
+          <label for="office" class="form-check-label">公司上班</label>
         </div>
 
         <!-- 選項 3 -->
         <div class="form-check form-check-inline">
           <input type="checkbox" name="job-type" id="piecework" class="form-check-input" value="piecework">
-          <label for="piecework" class="form-check-lebel">接案工作</label>
+          <label for="piecework" class="form-check-label">接案工作</label>
         </div>
 
         <!-- 選項 4 -->
         <div class="form-check form-check-inline">
           <input type="checkbox" name="job-type" id="intern" class="form-check-input" value="intern">
-          <label for="intern" class="form-check-lebel">實習工作</label>
+          <label for="intern" class="form-check-label">實習工作</label>
         </div>
       </fieldset>
 
@@ -126,7 +134,7 @@
       <!-- 多行文字輸入控制項: textarea -->
       <div class="form-group">
         <label for="description">敘述</label>
-        <textarea name="description" id="description" cols="20" rows="3"></textarea>
+        <textarea name="description" id="description" class="form-control" cols="20" rows="3"></textarea>
       </div>
       
 
@@ -134,14 +142,16 @@
       <button type="submit" id="submit-btn" class="btn btn-primary">送出</button>
     </form>
   </div>
-  
-
-
 
 
   
 
   <!-- 引入程式 -->
   <script src="./app.js"></script>
+
+  <!-- 引入外部資源: BOOTSTRAP -->
+  <script src="./popper.js"></script>
+  <script src="./bootstrap.js"></script>
+
 </body>
 </html>
